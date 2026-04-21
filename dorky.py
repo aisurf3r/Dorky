@@ -18,6 +18,7 @@ def _bootstrap():
 
     import tkinter as _tk
     import tkinter.ttk as _ttk
+    import threading
 
     win = _tk.Tk()
     win.title("Dorky — Instalando dependencias")
@@ -29,18 +30,39 @@ def _bootstrap():
     bar = _ttk.Progressbar(win, mode="indeterminate", length=380)
     bar.pack()
     bar.start(12)
-    win.update()
 
-    for pkg in missing:
-        try:
-            subprocess.check_call(
-                [sys.executable, "-m", "pip", "install", "--quiet", pkg],
-                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        except subprocess.CalledProcessError:
-            pass
+    done = threading.Event()
+    failed = []
+
+    def instalar():
+        for pkg in missing:
+            try:
+                subprocess.check_call(
+                    [sys.executable, "-m", "pip", "install", "--quiet", pkg],
+                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            except subprocess.CalledProcessError:
+                failed.append(pkg)
+        done.set()
+
+    threading.Thread(target=instalar, daemon=True).start()
+
+    while not done.is_set():
+        win.update()
+        done.wait(timeout=0.05)
 
     bar.stop()
     win.destroy()
+
+    if failed:
+        import tkinter.messagebox as _mb
+        _mb.showerror(
+            "Error de instalación",
+            f"No se pudieron instalar los siguientes paquetes:\n\n"
+            + "\n".join(f"  • {p}" for p in failed)
+            + "\n\nEjecuta manualmente:\n"
+            + f"  pip install {' '.join(failed)}"
+        )
+        sys.exit(1)
 
 _bootstrap()
 
@@ -54,7 +76,7 @@ from urllib.parse import quote
 import threading
 import webbrowser
 from datetime import datetime
-from PIL import Image, ImageTk
+from PIL import Image
 import urllib.request
 import io
 
@@ -98,6 +120,7 @@ class Dorky(ctk.CTk):
             "cache:":      ctk.BooleanVar(value=False),
         }
         self._dorks_originales: list[str] = []
+        self._cancel_event = threading.Event()
 
         self.cargar_dorks_desde_archivo()
         self.setup_ui()
@@ -241,6 +264,8 @@ class Dorky(ctk.CTk):
 
         ctk.CTkButton(btn_frame, text="Limpiar todo", fg_color="#F04747", height=42, width=130,
                       command=self.limpiar_todo).pack(side="right")
+        ctk.CTkButton(btn_frame, text="⏹ Cancelar búsqueda", fg_color="#555555", height=42, width=160,
+                      command=self.cancelar_busqueda).pack(side="right", padx=(0, 6))
 
         # Cabecera resultados
         res_header = ctk.CTkFrame(right, fg_color="transparent")
@@ -304,6 +329,13 @@ class Dorky(ctk.CTk):
             self.log_result(f"✓ Agregado: {dork[:75]}", "success")
 
     def on_modificador(self, mod):
+        # Resincronizar por si el usuario editó el textbox a mano
+        prefijo_actual = "".join(m for m, var in self.mod_vars.items() if var.get() and m != mod)
+        self._dorks_originales = [
+            l.replace(prefijo_actual, "", 1)
+            for l in self.dorks_text.get("1.0", "end").splitlines()
+            if l.strip()
+        ]
         marcado = self.mod_vars[mod].get()
         if self._dorks_originales:
             if marcado:
@@ -390,6 +422,7 @@ class Dorky(ctk.CTk):
             f"🚀 Iniciando búsqueda — {len(dorks)} dork(s) · "
             f"{self.num_results_var.get()} resultados/dork", "success")
 
+        self._cancel_event.clear()
         threading.Thread(target=self.procesar_api, args=(modo, dorks), daemon=True).start()
 
     def procesar_api(self, api_name, dorks):
@@ -399,12 +432,14 @@ class Dorky(ctk.CTk):
         paginas   = (num + PAGE_SIZE - 1) // PAGE_SIZE
 
         for i, dork in enumerate(dorks, 1):
+            if self._cancel_event.is_set():
+                break
             self.log_result(f"[{i}/{len(dorks)}] {api_name.upper()} → {dork[:72]}", "info")
             urls_vistas = set()
             total_obtenidos = 0
 
             for pagina in range(paginas):
-                if total_obtenidos >= num:
+                if self._cancel_event.is_set() or total_obtenidos >= num:
                     break
                 try:
                     if api_name == "scrapedo":
@@ -454,13 +489,20 @@ class Dorky(ctk.CTk):
                     break
 
                 if pagina < paginas - 1:
+                    if self._cancel_event.is_set():
+                        break
                     time.sleep(1.6)
 
             if paginas == 1:
                 self.log_result(f"   → {total_obtenidos} resultados", "success")
+            if self._cancel_event.is_set():
+                break
             time.sleep(1.6)
 
-        self.log_result(f"✅ Finalizada búsqueda con {api_name.upper()}", "success")
+        if self._cancel_event.is_set():
+            self.log_result("⏹ Búsqueda cancelada por el usuario.", "error")
+        else:
+            self.log_result(f"✅ Finalizada búsqueda con {api_name.upper()}", "success")
 
     # ════════════════════════════════════════════════════════════════════════
     # LOG
@@ -496,6 +538,9 @@ class Dorky(ctk.CTk):
     # ════════════════════════════════════════════════════════════════════════
     # EXPORTAR / LIMPIAR
     # ════════════════════════════════════════════════════════════════════════
+    def cancelar_busqueda(self):
+        self._cancel_event.set()
+
     def exportar_urls(self):
         if not self.resultados:
             messagebox.showinfo("Sin resultados", "No hay URLs para exportar todavía.")
