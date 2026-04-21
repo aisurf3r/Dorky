@@ -47,7 +47,8 @@ Ideal para pentesters, investigadores de seguridad, bug hunters y cualquier pers
 
 *Interfaz principal de Dorky*
 <img width="1908" height="1045" alt="{0FAFF8DC-10C8-479E-9B82-20250981268D}" src="https://github.com/user-attachments/assets/082e9ac4-eff2-43a5-8ca0-633d2abf8da1" />
-<img width="503" height="382" alt="{3E79A735-3DE9-4899-8717-1A7A801E25C0}" src="https://github.com/user-attachments/assets/e1b3eadd-aac1-4bc7-b510-b681371dc781" /> 
+<img width="519" height="372" alt="{48861318-ABFD-4A38-995F-C05F354E39D8}" src="https://github.com/user-attachments/assets/58e3a734-fb42-4c13-b8cd-c9fc33c544b3" />
+ 
 
 </div>
 
