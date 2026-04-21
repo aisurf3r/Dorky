@@ -1,0 +1,743 @@
+# === ADMIN PANELS ===
+inurl:admin
+inurl:admin/
+inurl:admin.php
+inurl:admin/login
+inurl:admin/index.php
+inurl:admin_area
+inurl:admin_area/login.php
+inurl:administrator
+inurl:administrator/index.php
+inurl:administrator/login.php
+inurl:admincp
+inurl:admincp/login.php
+inurl:cp
+inurl:controlpanel
+inurl:controlpanel.php
+inurl:panel
+inurl:panel-administracion
+inurl:webadmin
+inurl:webadmin/index.php
+inurl:adm
+inurl:adm_auth.php
+inurl:siteadmin
+inurl:siteadmin/login.php
+inurl:manager
+inurl:moderator
+inurl:wp-admin
+inurl:wp-login.php
+inurl:dashboard
+inurl:admin/dashboard
+inurl:backend
+inurl:backoffice
+inurl:console
+inurl:management
+inurl:portal/admin
+inurl:staff
+inurl:superuser
+inurl:sysadmin
+inurl:account/login
+inurl:login/admin
+inurl:admin/auth
+inurl:admin_area/admin.php
+inurl:admin_area/index.php
+inurl:admin/controlpanel.php
+inurl:admin/cp.php
+inurl:admin/login.php
+inurl:adm/index.php
+inurl:adm_auth.php
+inurl:administrator/account.php
+inurl:administrator/login.php
+inurl:adminLogin.php
+inurl:admin_area/index.php
+inurl:admin_area/admin.php
+inurl:admin_area/login.php
+inurl:panel-administracion/login.php
+inurl:wp-admin/admin.php
+inurl:wp-admin/login.php
+inurl:admin/index.php
+inurl:admin/login.php
+inurl:admin_area/
+inurl:admincp/
+inurl:cp/
+inurl:moderator/
+inurl:webadmin/
+inurl:admin1/
+inurl:admin2/
+inurl:admin3/
+inurl:admin4/
+inurl:adm/
+inurl:account/
+inurl:accounts/
+inurl:admin_area/
+inurl:admincp/
+inurl:cp/
+inurl:moderator/
+inurl:webadmin/
+inurl:admin1/
+inurl:admin2/
+inurl:admin3/
+inurl:admin4/
+inurl:adm/
+inurl:account/
+inurl:accounts/
+inurl:panel/
+inurl:dashboard/
+inurl:console/
+inurl:management/
+inurl:backend/
+inurl:backoffice/
+inurl:portal/
+inurl:staff/
+inurl:superuser/
+inurl:sysadmin/
+inurl:login/admin
+inurl:admin/auth
+inurl:admin_area/admin.php
+inurl:admin_area/index.php
+
+# === LOGIN PAGES ===
+inurl:login
+inurl:login.php
+inurl:logon
+inurl:signin
+inurl:sign_in
+inurl:auth
+inurl:authentication
+inurl:verify
+inurl:account/login
+inurl:user/login
+inurl:wp-login.php
+inurl:admin/login
+inurl:login.asp
+inurl:login.aspx
+inurl:login.jsp
+inurl:member/login
+inurl:login.html
+inurl:logon.php
+inurl:signin.php
+inurl:sign_in.php
+inurl:auth.php
+inurl:authentication.php
+inurl:verify.php
+inurl:account/login.php
+inurl:user/login.php
+inurl:wp-login.php
+inurl:admin/login.php
+inurl:login.asp
+inurl:login.aspx
+inurl:login.jsp
+inurl:member/login.php
+inurl:login.html
+inurl:logon.php
+inurl:signin.php
+inurl:sign_in.php
+inurl:auth.php
+inurl:authentication.php
+inurl:verify.php
+inurl:account/login.php
+inurl:user/login.php
+inurl:wp-login.php
+inurl:admin/login.php
+inurl:login.asp
+inurl:login.aspx
+inurl:login.jsp
+inurl:member/login.php
+inurl:login.html
+inurl:logon.php
+inurl:signin.php
+inurl:sign_in.php
+inurl:auth.php
+inurl:authentication.php
+inurl:verify.php
+inurl:account/login.php
+inurl:user/login.php
+inurl:wp-login.php
+inurl:admin/login.php
+inurl:login.asp
+inurl:login.aspx
+inurl:login.jsp
+inurl:member/login.php
+inurl:login.html
+inurl:logon.php
+inurl:signin.php
+inurl:sign_in.php
+inurl:auth.php
+inurl:authentication.php
+inurl:verify.php
+inurl:account/login.php
+inurl:user/login.php
+inurl:wp-login.php
+inurl:admin/login.php
+inurl:login.asp
+inurl:login.aspx
+inurl:login.jsp
+inurl:member/login.php
+inurl:login.html
+inurl:logon.php
+inurl:signin.php
+inurl:sign_in.php
+inurl:auth.php
+inurl:authentication.php
+inurl:verify.php
+inurl:account/login.php
+inurl:user/login.php
+inurl:wp-login.php
+inurl:admin/login.php
+
+# === PARAMETER BASED (id=, page=, etc.) ===
+inurl:id=
+inurl:page=
+inurl:view.php?id=
+inurl:item.php?id=
+inurl:product.php?id=
+inurl:category.php?id=
+inurl:news.php?id=
+inurl:article.php?id=
+inurl:post.php?id=
+inurl:detail.php?id=
+inurl:show.php?id=
+inurl:read.php?id=
+inurl:php?id=
+inurl:asp?id=
+inurl:aspx?id=
+inurl:jsp?id=
+inurl:html?id=
+inurl:php?cat=
+inurl:php?pid=
+inurl:php?cid=
+inurl:php?mid=
+inurl:php?sid=
+inurl:php?tid=
+inurl:php?uid=
+inurl:php?fid=
+inurl:php?rid=
+inurl:php?bid=
+inurl:php?aid=
+inurl:php?gid=
+inurl:php?pid=
+inurl:php?file=
+inurl:php?path=
+inurl:php?dir=
+inurl:php?folder=
+inurl:php?download=
+inurl:php?get=
+inurl:php?open=
+inurl:php?load=
+inurl:php?include=
+inurl:php?require=
+inurl:php?action=
+inurl:php?do=
+inurl:php?cmd=
+inurl:php?exec=
+inurl:php?run=
+inurl:php?command=
+inurl:php?shell=
+inurl:php?upload=
+inurl:php?file=
+inurl:php?path=
+inurl:php?dir=
+inurl:php?folder=
+inurl:php?download=
+inurl:php?get=
+inurl:php?open=
+inurl:php?load=
+inurl:php?include=
+inurl:php?require=
+inurl:php?action=
+inurl:php?do=
+inurl:php?cmd=
+inurl:php?exec=
+inurl:php?run=
+inurl:php?command=
+inurl:php?shell=
+inurl:php?upload=
+inurl:php?file=
+inurl:php?path=
+inurl:php?dir=
+inurl:php?folder=
+inurl:php?download=
+inurl:php?get=
+inurl:php?open=
+inurl:php?load=
+inurl:php?include=
+inurl:php?require=
+inurl:php?action=
+inurl:php?do=
+inurl:php?cmd=
+inurl:php?exec=
+inurl:php?run=
+inurl:php?command=
+inurl:php?shell=
+inurl:php?upload=
+
+# === SENSITIVE DIRECTORIES & INDEX OF ===
+intitle:"index of"
+intitle:"index.of"
+inurl:backup
+inurl:backups
+inurl:config
+inurl:configs
+inurl:db
+inurl:database
+inurl:private
+inurl:confidential
+inurl:secret
+inurl:upload
+inurl:uploads
+inurl:tmp
+inurl:temp
+inurl:logs
+inurl:log
+inurl:admin
+inurl:administrator
+inurl:panel
+inurl:dashboard
+inurl:console
+inurl:management
+inurl:backup/
+inurl:backups/
+inurl:config/
+inurl:configs/
+inurl:db/
+inurl:database/
+inurl:private/
+inurl:confidential/
+inurl:secret/
+inurl:upload/
+inurl:uploads/
+inurl:tmp/
+inurl:temp/
+inurl:logs/
+inurl:log/
+inurl:admin/
+inurl:administrator/
+inurl:panel/
+inurl:dashboard/
+inurl:console/
+inurl:management/
+intitle:"index of" "parent directory"
+intitle:"index of" "size" "last modified"
+intitle:"index of" "backup"
+intitle:"index of" "config"
+intitle:"index of" "database"
+intitle:"index of" "private"
+intitle:"index of" "confidential"
+intitle:"index of" "secret"
+intitle:"index of" "upload"
+intitle:"index of" "uploads"
+intitle:"index of" "tmp"
+intitle:"index of" "temp"
+intitle:"index of" "logs"
+intitle:"index of" "log"
+intitle:"index of" "admin"
+intitle:"index of" "administrator"
+intitle:"index of" "panel"
+intitle:"index of" "dashboard"
+intitle:"index of" "console"
+intitle:"index of" "management"
+
+# === CONFIG & ENVIRONMENT FILES ===
+inurl:wp-config.php
+inurl:wp-config.bak
+inurl:wp-config-backup.txt
+inurl:config.php
+inurl:config.inc.php
+inurl:settings.php
+inurl:.env
+inurl:database.yml
+inurl:config.yaml
+inurl:.htaccess
+inurl:.htpasswd
+inurl:web.config
+inurl:"DB_PASSWORD"
+inurl:"DB_HOST"
+inurl:config
+inurl:configs
+inurl:env
+inurl:environment
+inurl:wp-config
+inurl:config.php
+inurl:settings.php
+inurl:.env
+inurl:database.yml
+inurl:config.yaml
+inurl:.htaccess
+inurl:.htpasswd
+inurl:web.config
+inurl:"DB_PASSWORD"
+inurl:"DB_HOST"
+inurl:config
+inurl:configs
+inurl:env
+inurl:environment
+inurl:wp-config
+inurl:config.php
+inurl:settings.php
+inurl:.env
+inurl:database.yml
+inurl:config.yaml
+inurl:.htaccess
+inurl:.htpasswd
+inurl:web.config
+inurl:"DB_PASSWORD"
+inurl:"DB_HOST"
+inurl:config
+inurl:configs
+inurl:env
+inurl:environment
+inurl:wp-config
+inurl:config.php
+inurl:settings.php
+inurl:.env
+inurl:database.yml
+inurl:config.yaml
+inurl:.htaccess
+inurl:.htpasswd
+inurl:web.config
+inurl:"DB_PASSWORD"
+inurl:"DB_HOST"
+
+# === BACKUP & DUMP FILES ===
+filetype:sql
+filetype:sql "backup"
+filetype:sql "dump"
+inurl:backup filetype:sql
+inurl:dump.sql
+inurl:backup.sql
+inurl:*.bak
+inurl:*.old
+inurl:*.backup
+inurl:*.tmp
+filetype:tar
+filetype:gz
+filetype:zip "backup"
+filetype:sql "INSERT INTO"
+filetype:sql "CREATE TABLE"
+inurl:backup
+inurl:backups
+inurl:dump
+inurl:database_backup
+filetype:sql
+filetype:sql "backup"
+filetype:sql "dump"
+inurl:backup filetype:sql
+inurl:dump.sql
+inurl:backup.sql
+inurl:*.bak
+inurl:*.old
+inurl:*.backup
+inurl:*.tmp
+filetype:tar
+filetype:gz
+filetype:zip "backup"
+filetype:sql "INSERT INTO"
+filetype:sql "CREATE TABLE"
+inurl:backup
+inurl:backups
+inurl:dump
+inurl:database_backup
+filetype:sql
+filetype:sql "backup"
+filetype:sql "dump"
+inurl:backup filetype:sql
+inurl:dump.sql
+inurl:backup.sql
+inurl:*.bak
+inurl:*.old
+inurl:*.backup
+inurl:*.tmp
+filetype:tar
+filetype:gz
+filetype:zip "backup"
+filetype:sql "INSERT INTO"
+filetype:sql "CREATE TABLE"
+inurl:backup
+inurl:backups
+inurl:dump
+inurl:database_backup
+
+# === FILETYPE SPECIFIC ===
+filetype:pdf
+filetype:sql
+filetype:log
+filetype:bak
+filetype:old
+filetype:backup
+filetype:conf
+filetype:ini
+filetype:env
+filetype:xls
+filetype:xlsx
+filetype:doc
+filetype:docx
+filetype:txt "password"
+filetype:xml "password"
+filetype:pdf "confidential"
+filetype:pdf "password"
+filetype:pdf "private"
+filetype:sql "password"
+filetype:log "error"
+filetype:log "root"
+filetype:log "admin"
+filetype:bak
+filetype:old
+filetype:backup
+filetype:conf
+filetype:ini
+filetype:env
+filetype:xls
+filetype:xlsx
+filetype:doc
+filetype:docx
+filetype:txt "password"
+filetype:xml "password"
+filetype:pdf "confidential"
+filetype:pdf "password"
+filetype:pdf "private"
+filetype:sql "password"
+filetype:log "error"
+filetype:log "root"
+filetype:log "admin"
+filetype:bak
+filetype:old
+filetype:backup
+filetype:conf
+filetype:ini
+filetype:env
+filetype:xls
+filetype:xlsx
+filetype:doc
+filetype:docx
+filetype:txt "password"
+filetype:xml "password"
+filetype:pdf "confidential"
+filetype:pdf "password"
+filetype:pdf "private"
+filetype:sql "password"
+filetype:log "error"
+filetype:log "root"
+filetype:log "admin"
+
+# === ERROR MESSAGES & SQL ERRORS ===
+"SQL syntax"
+"mysql_fetch_array()"
+"mysql_num_rows()"
+"Warning: mysql"
+"You have an error in your SQL syntax"
+"supplied argument is not a valid MySQL result resource"
+"Error executing query"
+"ORA-00933"
+"Microsoft OLE DB Provider for SQL Server"
+"ODBC Microsoft Access Driver"
+"ODBC SQL Server Driver"
+"Warning: pg_connect()"
+"Warning: pg_query()"
+"SQLSTATE"
+"mysql_error"
+"mysqli_fetch_array"
+"SQL command not properly ended"
+"syntax error"
+"unclosed quotation mark"
+"incorrect syntax near"
+"unexpected end of SQL command"
+"SQL injection"
+"database error"
+"query failed"
+"invalid query"
+"SQL error"
+"mysql_fetch"
+"pg_query"
+"mysqli_query"
+"SQL syntax"
+"mysql_fetch_array()"
+"mysql_num_rows()"
+"Warning: mysql"
+"You have an error in your SQL syntax"
+"supplied argument is not a valid MySQL result resource"
+"Error executing query"
+"ORA-00933"
+"Microsoft OLE DB Provider for SQL Server"
+"ODBC Microsoft Access Driver"
+"ODBC SQL Server Driver"
+"Warning: pg_connect()"
+"Warning: pg_query()"
+"SQLSTATE"
+"mysql_error"
+"mysqli_fetch_array"
+"SQL command not properly ended"
+"syntax error"
+"unclosed quotation mark"
+"incorrect syntax near"
+"unexpected end of SQL command"
+"SQL injection"
+"database error"
+"query failed"
+"invalid query"
+"SQL error"
+"mysql_fetch"
+"pg_query"
+"mysqli_query"
+
+# === DATABASE & PHPMYADMIN ===
+phpmyadmin
+phpMyAdmin
+"phpMyAdmin" intitle:"Welcome"
+pma/
+myadmin/
+phpmyadmin/index.php
+intitle:"phpMyAdmin"
+inurl:phpmyadmin
+inurl:pma
+inurl:myadmin
+"phpMyAdmin" "Welcome to"
+"Database Dump"
+"INSERT INTO" "password" filetype:sql
+"CREATE TABLE" filetype:sql
+intitle:"Index of" "mysql"
+intitle:"Index of" "phpmyadmin"
+phpmyadmin
+phpMyAdmin
+"phpMyAdmin" intitle:"Welcome"
+pma/
+myadmin/
+phpmyadmin/index.php
+intitle:"phpMyAdmin"
+inurl:phpmyadmin
+inurl:pma
+inurl:myadmin
+"phpMyAdmin" "Welcome to"
+"Database Dump"
+"INSERT INTO" "password" filetype:sql
+"CREATE TABLE" filetype:sql
+intitle:"Index of" "mysql"
+intitle:"Index of" "phpmyadmin"
+phpmyadmin
+phpMyAdmin
+"phpMyAdmin" intitle:"Welcome"
+pma/
+myadmin/
+phpmyadmin/index.php
+intitle:"phpMyAdmin"
+inurl:phpmyadmin
+inurl:pma
+inurl:myadmin
+"phpMyAdmin" "Welcome to"
+"Database Dump"
+"INSERT INTO" "password" filetype:sql
+"CREATE TABLE" filetype:sql
+
+# === WEB SHELLS & UPLOADERS ===
+inurl:shell
+inurl:cmd
+inurl:upload.php
+inurl:uploader
+"Upload File"
+"Web Shell"
+c99.php
+r57.php
+sym.php
+inurl:shell.php
+inurl:cmd.php
+inurl:upload.php
+inurl:uploader.php
+"Upload File"
+"Web Shell"
+c99.php
+r57.php
+sym.php
+inurl:shell
+inurl:cmd
+inurl:upload.php
+inurl:uploader
+"Upload File"
+"Web Shell"
+c99.php
+r57.php
+sym.php
+inurl:shell.php
+inurl:cmd.php
+inurl:upload.php
+inurl:uploader.php
+"Upload File"
+"Web Shell"
+c99.php
+r57.php
+sym.php
+inurl:shell
+inurl:cmd
+inurl:upload.php
+inurl:uploader
+"Upload File"
+"Web Shell"
+c99.php
+r57.php
+sym.php
+
+# === OTHERS ===
+intitle:"index of"
+"powered by"
+"index of"
+"confidential" filetype:pdf
+"password" filetype:pdf
+"private" filetype:pdf
+"sensitive" filetype:pdf
+"username" filetype:txt
+"password" filetype:txt
+"credentials" filetype:txt
+"email" filetype:xls
+inurl:backup
+inurl:config
+inurl:db
+inurl:private
+inurl:secret
+inurl:upload
+inurl:logs
+"DB_PASSWORD"
+".env"
+"wp-config"
+"phpinfo()"
+"phpinfo"
+"Server at"
+"Apache Server Status"
+"nginx"
+"Microsoft-IIS"
+"powered by WordPress"
+"powered by Joomla"
+"powered by Drupal"
+"powered by Magento"
+"powered by Shopify"
+"powered by PrestaShop"
+intitle:"index of"
+"powered by"
+"index of"
+"confidential" filetype:pdf
+"password" filetype:pdf
+"private" filetype:pdf
+"sensitive" filetype:pdf
+"username" filetype:txt
+"password" filetype:txt
+"credentials" filetype:txt
+"email" filetype:xls
+inurl:backup
+inurl:config
+inurl:db
+inurl:private
+inurl:secret
+inurl:upload
+inurl:logs
+"DB_PASSWORD"
+".env"
+"wp-config"
+"phpinfo()"
+"phpinfo"
+"Server at"
+"Apache Server Status"
+"nginx"
+"Microsoft-IIS"
+"powered by WordPress"
+"powered by Joomla"
+"powered by Drupal"
+"powered by Magento"
+"powered by Shopify"
+"powered by PrestaShop"
