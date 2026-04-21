@@ -25,7 +25,7 @@ Ideal para pentesters, investigadores de seguridad, bug hunters y cualquier pers
 
 ## Características
 
-- 🎯 **Biblioteca de dorks** organizada por categorías cargada desde `dorks.txt`
+- 🎯 **Biblioteca de dorks** organizada por categorías cargada desde `dorks.txt`(expandible)
 - ✏️ **Modo manual** — escribe tus propios dorks directamente en el editor
 - 🔧 **Modificadores de un clic** — `site:`, `inurl:`, `intext:`, `filetype:` y más
   - Con dorks de la biblioteca: se aplican/quitan en todas las líneas a la vez
@@ -47,7 +47,9 @@ Ideal para pentesters, investigadores de seguridad, bug hunters y cualquier pers
 
 *Interfaz principal de Dorky*
 <img width="1908" height="1045" alt="{0FAFF8DC-10C8-479E-9B82-20250981268D}" src="https://github.com/user-attachments/assets/082e9ac4-eff2-43a5-8ca0-633d2abf8da1" />
-<img width="519" height="372" alt="{48861318-ABFD-4A38-995F-C05F354E39D8}" src="https://github.com/user-attachments/assets/58e3a734-fb42-4c13-b8cd-c9fc33c544b3" />
+
+<img width="508" height="368" alt="{F2F6B907-8D74-4EA2-8E5A-E1ED58113377}" src="https://github.com/user-attachments/assets/f48705b4-3793-4d92-981a-6688e4abe6eb" />
+
  
 
 </div>
