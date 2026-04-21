@@ -66,7 +66,7 @@ def _bootstrap():
 
 _bootstrap()
 
-# ================== IMPORTS (ya garantizados) ================================
+# ================== IMPORTS ================================
 import os
 import customtkinter as ctk
 from tkinter import messagebox, Listbox, EXTENDED
@@ -224,7 +224,7 @@ class Dorky(ctk.CTk):
         right = ctk.CTkFrame(main, fg_color="#36393F")
         right.pack(side="right", fill="both", expand=True)
 
-        # Fila: "Dorks a buscar (editable)"  ←→  enlace GitHub a la derecha
+        # Fila: "Dorks a buscar (editable)"  
         dorks_header = ctk.CTkFrame(right, fg_color="transparent")
         dorks_header.pack(fill="x", padx=15, pady=(12, 2))
 
