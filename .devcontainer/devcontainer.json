@@ -1,0 +1,7 @@
+{
+  "name": "Entorno Dorky",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  
+  // Instala de forma automática las librerías gráficas de Linux al iniciar
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3-tk x11-apps"
+}
