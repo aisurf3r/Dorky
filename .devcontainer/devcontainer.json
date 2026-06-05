@@ -2,13 +2,15 @@
   "name": "Entorno Dorky",
   "image": "mcr.microsoft.com/devcontainers/python:3.11",
   
-  // Añade un escritorio virtual (VNC) automático en el navegador
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1": {
       "version": "latest"
     }
   },
 
-  // Instala las librerías gráficas de Linux necesarias
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3-tk x11-apps"
+  // 1. Esto instala las librerías del sistema operativo (Linux)
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3-tk x11-apps",
+
+  // 2. NUEVO: Esto instala las librerías de Python en la máquina virtual antes de arrancar
+  "updateContentCommand": "pip install customtkinter Pillow requests"
 }
